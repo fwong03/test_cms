@@ -26,3 +26,8 @@ def document_view(context, request):
             'master': get_renderer('templates/master.pt').implementation(),
            }
 
+@view_config(name='show_types', renderer='templates/show_types.pt')
+def show_types(request):
+    all_types = request.registry.content.all()
+    return {'all_types': all_types}
+
