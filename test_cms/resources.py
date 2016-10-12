@@ -63,7 +63,9 @@ class BlogEntrySchema(Schema):
         validator=colander.Range(today, None)
     )
     kind = colander.SchemaNode(colander.String(),
-                               validator=colander.OneOf(['a', 'b'])
+                               validator=colander.OneOf(['a', 'b']),
+                               widget=deform.widget.SelectWidget(
+                                   values=[('a', 'a'), ('b', 'b')]),
                                )
     body = colander.SchemaNode(
         colander.String(),
