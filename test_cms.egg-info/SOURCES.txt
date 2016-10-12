@@ -4,7 +4,6 @@ README.txt
 development.ini
 production.ini
 setup.cfg
-test_cms/__init__.py
 test_cms/resources.py
 test_cms/views.py
 test_cms.egg-info/PKG-INFO
@@ -14,8 +13,3 @@ test_cms.egg-info/entry_points.txt
 test_cms.egg-info/not-zip-safe
 test_cms.egg-info/requires.txt
 test_cms.egg-info/top_level.txt
-test_cms/retail/__init__.py
-test_cms/retail/views.py
-test_cms/retail/templates/document.pt
-test_cms/retail/templates/master.pt
-test_cms/retail/templates/splash.pt
